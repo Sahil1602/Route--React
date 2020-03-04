@@ -1,0 +1,17 @@
+.wrap{
+    width: calc(25% - 40px);
+    /* background-color: aliceblue; */
+    margin: 16px;
+    box-shadow: 3px 5px lightgray;
+    border: 0.5px solid rgb(241, 241, 241);
+}
+
+.image{
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.title{
+    padding: 6px;
+}

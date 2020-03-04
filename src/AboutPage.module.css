@@ -1,0 +1,9 @@
+.info{
+    color: darkblue;
+    font-size: 24px;
+    margin: 100px;
+}
+
+.info > h1{
+    color: darkred;
+}

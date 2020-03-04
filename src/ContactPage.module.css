@@ -1,0 +1,11 @@
+.contactPage > i{
+    font-size: 150px;
+    color: mediumblue;
+    margin: 200px;
+    margin-bottom: 50px;
+}
+
+.contactPage> h3{
+    margin: 0;
+    margin-left: 200px;
+}
