@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import HomePage from './Homepage'
 import Contacts from './ContactPage'
 import Info from './AboutPage'
+import VideoDetail from './DetailPage'
 
 
 
@@ -20,9 +21,10 @@ class App extends React.Component {
         <div>
           <Topbar />
           <Switch>
-            <Route path='/home' component={HomePage} />
             <Route path='/contact' component={Contacts} />
             <Route path='/about' component={Info} />
+            <Route path='/details/:videoId' component={VideoDetail} />
+            <Route path='/' component={HomePage} />
           </Switch>
           
           {/* <HomePage />

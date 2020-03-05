@@ -1,0 +1,7 @@
+.detail{
+    margin: 100px;
+}
+
+.detail > h1{
+    color: darkblue;
+}

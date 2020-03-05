@@ -2,7 +2,7 @@ import React from 'react';
 import Spinner from './Loading';
 import axios from 'axios';
 import VCardsComponent from './VideoCard'
-
+import classes from './HomePage.module.css'
 class home extends React.Component{
     state = {
         videoLists: [],
@@ -20,10 +20,10 @@ class home extends React.Component{
     }
     render(){
         const videoCards = this.state.videoLists.map(card => {
-            return <VCardsComponent key={card.id} title={card.title} thumbnail={card.thumbnail} /> 
+            return <VCardsComponent key={card.id} title={card.title} id={card.id} thumbnail={card.thumbnail} /> 
         })
         return(
-            <div className="videoCards">
+            <div className={classes.videoCards}>
                 {this.state.showLoader ? <Spinner /> : videoCards}
             </div>
         )
